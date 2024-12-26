@@ -8,7 +8,7 @@ const AuthForm = ({ isRegister }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url = isRegister ? 'http://localhost:5000/api/auth/register' : 'http://localhost:5000/api/auth/login';
+        const url = isRegister ? 'https://login-project-beta.vercel.app/api/auth/register' : 'https://login-project-beta.vercel.app/api/auth/login';
         const payload = isRegister ? formData : { email: formData.email, password: formData.password };
 
         try {
